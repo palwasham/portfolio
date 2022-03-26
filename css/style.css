@@ -1,0 +1,283 @@
+
+/* General Changes */
+h3{
+  font-size:30px;
+  font-weight: bold;
+}
+
+body{
+  font-family: 'Georgia', serif;
+}
+
+ html {
+  scroll-behavior: smooth;
+}
+/* General Changes */
+
+
+/* Navbar Section */
+.navbar{
+  border-bottom: #003333 solid 4px;
+}
+
+.navbar-brand{
+  color:#003333 !important;
+  font-size:27px;
+}
+
+.nav-link{
+  text-transform: uppercase;
+}
+
+.nav-link:hover{
+  color: #009999 !important;
+}
+/* Navbar Section */
+
+
+
+/* Header Section */
+#header{
+  background: url('../images/backg2.jpeg') no-repeat;
+  background-size: cover;
+  height: 80vh;
+
+}
+
+h1{
+  margin-top: 270px;
+  color: #e6ffff;
+}
+
+h3{
+color: #e6ffff;
+margin-top: 20px;
+}
+
+button{
+  margin-top: 20px;
+}
+
+.btn-outline-secondary{
+  cursor:pointer;
+}
+
+.btn-outline-secondary:hover{
+  background-color: #003333;
+}
+/* Header Section */
+
+
+
+/* Features Section */
+p{
+  color: black;
+}
+
+#features i{
+  color:#003333;
+}
+
+#features .container{
+  margin-bottom: 1px;
+}
+
+#features .nav-link{
+  color:black;
+}
+
+#features h3:hover{
+  color:#00cccc;
+  cursor:pointer;
+}
+/* Features Section */
+
+
+
+/* About me Section */
+#aboutMe{
+  background-color: #003333;
+}
+
+#aboutMe h3{
+  color: black;
+}
+
+.aboutMeArea{
+  background-color: white;
+  height: 550px;
+  position: relative;
+
+  margin-right: -40px;
+  padding:40px;
+}
+
+.aboutMeImage{
+  margin-top: 30px;
+  margin-left: 50px;
+  z-index:90;
+}
+/* About me Section */
+
+
+/* projects Section */
+.container{
+  margin-bottom: 30px;
+
+}
+#product h3{
+  color: black;
+}
+/* projects Section */
+
+
+
+/* Video Section */
+#work{
+  background: url(../images/back1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size:cover;
+}
+
+#work i{
+  color:#003333;
+}
+
+#work h3{
+  color: black;
+}
+/* Video Section */
+
+
+
+
+/* GALLERY Section */
+#gallery .col-md-3{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.imageContainer{
+  position: relative;
+  cursor:pointer;
+}
+
+.imgOverlay{
+  position:absolute;
+  top:0;
+  bottom:0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  background-color:rgb(26, 0, 26);
+  opacity:0;
+
+}
+
+.imageContainer:hover .imgOverlay{
+  opacity:.5;
+
+}
+
+.imgText{
+  position: absolute;
+  color:white;
+  transform: translate(-50%, -50%);
+  top:50%;
+  left:50%;
+}
+/* GALLERY Section */
+
+
+
+/* Footer Section */
+#footer{
+  bottom:0px;
+  width: 100%;
+  background: #003333;
+
+}
+.contactImage{
+  margin-top: 6px;
+  margin-left: 80px;
+  z-index:10;
+  size-adjust: 10;
+}
+#footer .container{
+  margin:auto;
+  padding:0 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+#footer .container .content{
+  flex-basis: 50%;
+  padding:10px 20px;
+  color:white;
+}
+
+#footer p{
+  color: white;
+}
+
+.content h2{
+  font-size: 1.2rem;
+  font-size: 600;
+  text-transform:uppercase;
+}
+
+
+/* media quiry */
+@media screen and (max-width: 1200px)
+{
+#header{
+  background-size: 1200px 100vh;
+
+}
+}
+
+@media screen and (max-width: 992px)
+{
+  #header{
+    background-size: 990px 100vh;
+  }
+
+}
+
+@media screen and (max-width: 768px)
+{
+  #header{
+    background-size: 760px 100vh;
+  }
+  .row p{
+    color:black;
+  }
+  .aboutMeImage{
+    margin-left:0;
+    text-align: center;
+    margin-top: 0;
+  }
+  .aboutMeArea{
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 576px)
+{
+  #header{
+    background-size: 570px 100vh;
+
+  }
+  .aboutMeImage{
+    margin-left:0;
+    text-align: center;
+    margin-top: 0;
+  }
+  .aboutMeArea{
+    margin-right: 0;
+  }
+}
