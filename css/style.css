@@ -40,7 +40,7 @@ body{
 #header{
   background: url('../images/backg2.jpeg') no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: 85vh;
 
 }
 
@@ -63,7 +63,7 @@ p{
   color: black;
 }
 #features {
-  background-color:#507070;
+  background-color:#e3f1f1;
 }
 #features i{
   color:#003333;
@@ -109,7 +109,7 @@ p{
 
 
 
- /* Work Section */
+ /* Project heads Section */
 #work{
   background: url(../images/back1.jpeg);
   background-repeat: no-repeat;
@@ -119,21 +119,21 @@ p{
 }
 
 #work h1{
-  color: black;
+  color: white;
   margin-top: 40px;
 }
-/* Work Section */
+/* Project heads Section  */
 
 
 
-/* Poster Section */
+/* Posts Section */
 .container{
   margin-bottom: 30px;
 }
 #product h3{
   color: black;
 }
-/* Poster Section */
+/* Posts Section */
 
 
 
