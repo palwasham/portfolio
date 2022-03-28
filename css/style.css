@@ -40,7 +40,7 @@ body{
 #header{
   background: url('../images/backg2.jpeg') no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 70vh;
 
 }
 
@@ -54,17 +54,6 @@ color: #e6ffff;
 margin-top: 20px;
 }
 
-button{
-  margin-top: 20px;
-}
-
-.btn-outline-secondary{
-  cursor:pointer;
-}
-
-.btn-outline-secondary:hover{
-  background-color: #003333;
-}
 /* Header Section */
 
 
@@ -95,44 +84,30 @@ p{
 
 
 /* About me Section */
-#aboutMe{
+#about .container{
+  margin-bottom: 10px;
+  background-color: white;
+  size: 100px;
+
+}
+#about {
   background-color: #003333;
 }
-
-#aboutMe h3{
+.about p{
+  font-family: Arial;
+  font-size: 1.2em;
   color: black;
+  padding: 20px;
+}
+.about{
+  display: flex;
 }
 
-.aboutMeArea{
-  background-color: white;
-  height: 550px;
-  position: relative;
-
-  margin-right: -40px;
-  padding:40px;
-}
-
-.aboutMeImage{
-  margin-top: 30px;
-  margin-left: 50px;
-  z-index:90;
-}
 /* About me Section */
 
 
-/* projects Section */
-.container{
-  margin-bottom: 30px;
 
-}
-#product h3{
-  color: black;
-}
-/* projects Section */
-
-
-
-/* Video Section */
+ /* Work Section */
 #work{
   background: url(../images/back1.jpeg);
   background-repeat: no-repeat;
@@ -141,15 +116,22 @@ p{
   background-size:cover;
 }
 
-#work i{
-  color:#003333;
+#work h1{
+  color: black;
+  margin-top: 40px;
 }
+/* Work Section */
 
-#work h3{
+
+
+/* Poster Section */
+.container{
+  margin-bottom: 30px;
+}
+#product h3{
   color: black;
 }
-/* Video Section */
-
+/* Poster Section */
 
 
 
