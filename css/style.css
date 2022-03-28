@@ -62,7 +62,9 @@ margin-top: 20px;
 p{
   color: black;
 }
-
+#features {
+  background-color:#507070;
+}
 #features i{
   color:#003333;
 }
@@ -86,7 +88,7 @@ p{
 /* About me Section */
 #about .container{
   margin-bottom: 10px;
-  background-color: rgb(68, 101, 102);
+  background-color: rgb(219, 232, 233);
   size: 100px;
 
 }
