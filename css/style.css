@@ -1,3 +1,6 @@
+/* =========================
+   General Changes
+========================= */
 h3 {
   font-size: 30px;
   font-weight: bold;
@@ -37,7 +40,6 @@ html {
 #header {
   background: url("../images/backg2.jpeg") no-repeat;
   background-size: cover;
-  background-position: center;
   height: 70vh;
 }
 
@@ -89,6 +91,8 @@ p {
 #about .container {
   margin-bottom: 10px;
   background-color: rgb(219, 232, 233);
+  /* NOTE: `size` is not a valid CSS property; keeping it commented out */
+  /* size: 100px; */
 }
 
 .about {
@@ -106,11 +110,15 @@ p {
    Project Heads Section
 ========================= */
 #work {
-  background-color: #0c3e3e;
+  background: url("../images/back1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #work h1 {
-  color: #ffffff;
+  color:  #298e8e;
   margin-top: 40px;
 }
 
@@ -136,6 +144,7 @@ p {
 .imageContainer {
   position: relative;
   cursor: pointer;
+  /* NOTE: `width: 100;` missing unit; common intent is 100% */
   width: 100%;
 }
 
@@ -149,7 +158,6 @@ p {
   height: 100%;
   background-color: rgb(26, 0, 26);
   opacity: 0;
-  transition: 0.3s ease;
 }
 
 .imageContainer:hover .imgOverlay {
@@ -177,6 +185,8 @@ p {
   margin-top: 6px;
   margin-left: 80px;
   z-index: 10;
+  /* NOTE: `size-adjust` is not a standard CSS property for general layout; keeping commented out */
+  /* size-adjust: 10; */
 }
 
 #footer .container {
@@ -190,15 +200,16 @@ p {
 #footer .container .content {
   flex-basis: 50%;
   padding: 10px 20px;
-  color: white;
+  color: #298e8e;
 }
 
 #footer p {
-  color: white;
+  color:  #298e8e;
 }
 
 .content h2 {
   font-size: 1.2rem;
+  /* NOTE: `font-size: 600;` is invalid; likely meant font-weight */
   font-weight: 600;
   text-transform: uppercase;
 }
