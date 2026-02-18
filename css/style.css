@@ -1,251 +1,266 @@
-h3{
-  font-size:30px;
+/* =========================
+   General Changes
+========================= */
+h3 {
+  font-size: 30px;
   font-weight: bold;
 }
 
-body{
-  font-family: 'Georgia', serif;
-  background-color: #e8eff2; /* light blueish-grey */
+body {
+  font-family: "Georgia", serif;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-.navbar{
+/* =========================
+   Navbar Section
+========================= */
+.navbar {
   border-bottom: #003333 solid 4px;
-  background-color: #008B8B;
 }
 
-.navbar-brand{
-  color:#003333 !important;
-  font-size:27px;
+.navbar-brand {
+  color: #003333 !important;
+  font-size: 27px;
 }
 
-.nav-link{
+.nav-link {
   text-transform: uppercase;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: #1e2d2d !important;
 }
 
-/* HEADER: no background image, simple color */
-#header{
-  background-color: #dfeaed; /* light blueish-grey */
+/* =========================
+   Header Section
+========================= */
+#header {
+  background: url("../images/backg2.jpeg") no-repeat;
+  background-size: cover;
   height: 70vh;
-  display: flex;
-  align-items: center;
 }
 
-#header .overlay{
-  width: 100%;
+h1 {
+  margin-top: 190px;
+  color: #ffffff;
 }
 
-h1{
-  margin-top: 0;
-  color: #003333; /* dark teal */
+h3 {
+  color: #e6ffff;
+  margin-top: 20px;
 }
 
-#header h3{
-  color: #0c3e3e; /* deep teal */
-  margin-top: 12px;
-}
-
-p{
+/* =========================
+   Features Section
+========================= */
+p {
   color: black;
 }
 
-#features{
-  background-color:#e3f1f1;
+#features {
+  background-color: #e3f1f1;
 }
 
-#features i{
-  color:#003333;
+#features i {
+  color: #003333;
 }
 
-#features .container{
+#features .container {
   margin-bottom: 1px;
 }
 
-#features .nav-link{
-  color:black !important;
+#features .nav-link {
+  color: black;
 }
 
-#features h3:hover{
-  color:#00cccc;
-  cursor:pointer;
+#features h3:hover {
+  color: #00cccc;
+  cursor: pointer;
 }
 
-#about .container{
-  margin-bottom: 10px;
-  background-color: rgb(219, 232, 233);
-}
-
-#about{
+/* =========================
+   About Me Section
+========================= */
+#about {
   background-color: #0c3e3e;
 }
 
-#about p{
+#about .container {
+  margin-bottom: 10px;
+  background-color: rgb(219, 232, 233);
+  /* NOTE: `size` is not a valid CSS property; keeping it commented out */
+  /* size: 100px; */
+}
+
+.about {
+  display: flex;
+}
+
+.about p {
   font-family: Arial, sans-serif;
   font-size: 1.2em;
   color: black;
   padding: 20px;
 }
 
-/* PROJECT HEADERS: no background images */
-#work{
-  background-color: #0c3e3e;
-  padding: 30px 0;
+/* =========================
+   Project Heads Section
+========================= */
+#work {
+  background: url("../images/back1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-#work h1{
+#work h1 {
   color: white;
-  margin-top: 0;
-  text-decoration: none !important;
+  margin-top: 40px;
 }
 
-#work h1 u,
-#work h1 a{
-  text-decoration: none !important;
-  color: white !important;
-}
-
-.work-banner{
-  background-color: #0c3e3e;
-  padding: 30px 0;
-}
-
-.work-banner h1{
-  color: white;
-  margin-top: 0;
-  text-decoration: none !important;
-}
-
-.container{
+/* =========================
+   Posts Section
+========================= */
+.container {
   margin-bottom: 30px;
 }
 
-#product h3{
+#product h3 {
   color: black;
 }
 
-.project-img{
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-}
-
-.poster-img{
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-.logo-img{
-  width: 100%;
-  max-height: 420px;
-  object-fit: contain;
-}
-
-#gallery .col-md-3{
+/* =========================
+   Gallery Section
+========================= */
+#gallery .col-md-3 {
   padding-left: 0;
   padding-right: 0;
 }
 
-#gallery .col-md-4{
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.imageContainer{
+.imageContainer {
   position: relative;
   cursor: pointer;
+  /* NOTE: `width: 100;` missing unit; common intent is 100% */
   width: 100%;
 }
 
-.imgOverlay{
-  position:absolute;
-  top:0;
-  bottom:0;
+.imgOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
   right: 0;
   left: 0;
   width: 100%;
-  height:100%;
-  background-color:rgb(26, 0, 26);
-  opacity:0;
-  transition: opacity 0.2s ease;
+  height: 100%;
+  background-color: rgb(26, 0, 26);
+  opacity: 0;
 }
 
-.imageContainer:hover .imgOverlay{
-  opacity:.5;
+.imageContainer:hover .imgOverlay {
+  opacity: 0.5;
 }
 
-.imgText{
+.imgText {
   position: absolute;
-  color:white;
+  color: white;
   transform: translate(-50%, -50%);
-  top:50%;
-  left:50%;
-  text-align: center;
+  top: 50%;
+  left: 50%;
 }
 
-#footer{
-  bottom:0px;
+/* =========================
+   Footer Section
+========================= */
+#footer {
+  bottom: 0px;
   width: 100%;
   background: #003333;
 }
 
-.contactImage{
+.contactImage {
   margin-top: 6px;
   margin-left: 80px;
-  z-index:10;
+  z-index: 10;
+  /* NOTE: `size-adjust` is not a standard CSS property for general layout; keeping commented out */
+  /* size-adjust: 10; */
 }
 
-#footer .container{
-  margin:auto;
-  padding:0 20px;
-  display:flex;
-  justify-content:space-between;
+#footer .container {
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
-#footer .container .content{
+#footer .container .content {
   flex-basis: 50%;
-  padding:10px 20px;
-  color:white;
-}
-
-#footer p{
+  padding: 10px 20px;
   color: white;
 }
 
-.content h2{
+#footer p {
+  color: white;
+}
+
+.content h2 {
   font-size: 1.2rem;
+  /* NOTE: `font-size: 600;` is invalid; likely meant font-weight */
   font-weight: 600;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
 
-@media screen and (max-width: 768px){
-  .row p{
-    color:black;
-  }
-  #footer .container{
-    justify-content: center;
-  }
-  .contactImage{
-    margin-left: 0;
-    margin-top: 20px;
+/* =========================
+   Media Queries
+========================= */
+@media screen and (max-width: 1200px) {
+  #header {
+    background-size: 1200px 100vh;
   }
 }
 
-@media screen and (max-width: 576px){
-  #footer .container{
-    justify-content: center;
+@media screen and (max-width: 992px) {
+  #header {
+    background-size: 990px 100vh;
   }
-  .contactImage{
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    background-size: 760px 100vh;
+  }
+
+  .row p {
+    color: black;
+  }
+
+  .aboutMeImage {
     margin-left: 0;
-    margin-top: 20px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .aboutMeArea {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #header {
+    background-size: 570px 100vh;
+  }
+
+  .aboutMeImage {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .aboutMeArea {
+    margin-right: 0;
   }
 }
