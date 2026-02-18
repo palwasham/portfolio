@@ -1,6 +1,3 @@
-/* =========================
-   General Changes
-========================= */
 h3 {
   font-size: 30px;
   font-weight: bold;
@@ -40,6 +37,7 @@ html {
 #header {
   background: url("../images/backg2.jpeg") no-repeat;
   background-size: cover;
+  background-position: center;
   height: 70vh;
 }
 
@@ -61,7 +59,7 @@ p {
 }
 
 #features {
-  background-color: #e3f1f1;
+  background-color: #298e8e;
 }
 
 #features i {
@@ -91,8 +89,6 @@ p {
 #about .container {
   margin-bottom: 10px;
   background-color: rgb(219, 232, 233);
-  /* NOTE: `size` is not a valid CSS property; keeping it commented out */
-  /* size: 100px; */
 }
 
 .about {
@@ -110,15 +106,11 @@ p {
    Project Heads Section
 ========================= */
 #work {
-  background: url("../images/back1.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: #0c3e3e;
 }
 
 #work h1 {
-  color: white;
+  color: #ffffff;
   margin-top: 40px;
 }
 
@@ -144,7 +136,6 @@ p {
 .imageContainer {
   position: relative;
   cursor: pointer;
-  /* NOTE: `width: 100;` missing unit; common intent is 100% */
   width: 100%;
 }
 
@@ -158,6 +149,7 @@ p {
   height: 100%;
   background-color: rgb(26, 0, 26);
   opacity: 0;
+  transition: 0.3s ease;
 }
 
 .imageContainer:hover .imgOverlay {
@@ -185,8 +177,6 @@ p {
   margin-top: 6px;
   margin-left: 80px;
   z-index: 10;
-  /* NOTE: `size-adjust` is not a standard CSS property for general layout; keeping commented out */
-  /* size-adjust: 10; */
 }
 
 #footer .container {
@@ -209,7 +199,6 @@ p {
 
 .content h2 {
   font-size: 1.2rem;
-  /* NOTE: `font-size: 600;` is invalid; likely meant font-weight */
   font-weight: 600;
   text-transform: uppercase;
 }
