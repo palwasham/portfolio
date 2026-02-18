@@ -1,340 +1,427 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Personal Portfolio</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>Personal Protfolio</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-        crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
 
-  <script src="https://kit.fontawesome.com/56a441ee2c.js" crossorigin="anonymous"></script>
-</head>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/56a441ee2c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
+    <!-- Navigation Section -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #008b8b"
+    >
+      <!-- Name -->
+      <a class="navbar-brand" href="#">Palwasha Moez</a>
 
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#header">Palwasha Moez</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#header">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navigation Section -->
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#header">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About me</a></li>
-        <li class="nav-item"><a class="nav-link" href="#cs-projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#media-projects">Media</a></li>
-        <li class="nav-item"><a class="nav-link" href="#logo-designs">Logos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+    <!-- Header Section -->
+    <header id="header">
+      <div class="overlay">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col">
+              <h1 class="display-4"><u>Personal Portfolio</u></h1>
+              <h3 class="display-5">Palwasha Moez.</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section -->
 
-  <header id="header">
-    <div class="overlay">
+    <!-- Features Section -->
+    <section id="features" class="py-5">
       <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <h1 class="display-4"><u>Personal Portfolio</u></h1>
-            <h3 class="display-5">Palwasha Moez.</h3>
+        <div class="row mt-1">
+          <div class="col-md-4 text-center">
+            <i class="fab fa-odnoklassniki fa-3x"></i>
+            <h3><a class="nav-link" href="#about">About me</a></h3>
+            <p>About me, my skills and intrests</p>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <i class="fas fa-rocket fa-3x"></i>
+            <h3><a class="nav-link" href="#work">Projects</a></h3>
+            <p>Projects that I have worked on</p>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <i class="fas fa-comment-dots fa-3x"></i>
+            <h3><a class="nav-link" href="#footer">Contact</a></h3>
+            <p>My contact information</p>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </section>
+    <!-- Features Section -->
 
-  <section id="features" class="py-5">
-    <div class="container">
-      <div class="row mt-1">
+    <!-- About me -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2><br />ABOUT ME</h2>
 
-        <div class="col-md-4 text-center mb-4">
-          <i class="fab fa-odnoklassniki fa-3x"></i>
-          <h3><a class="nav-link" href="#about">About</a></h3>
-          <p>About me, my skills, and background.</p>
-        </div>
+        <h5>
+          I am Palwasha Moez, student at Carleton Uniersity (2023-2027) doing
+          Bachelor in Cognitive science with concentration in computation <br />
+          <br />
+        </h5>
 
-        <div class="col-md-4 text-center mb-4">
-          <i class="fas fa-rocket fa-3x"></i>
-          <h3><a class="nav-link" href="#cs-projects">Projects</a></h3>
-          <p>Projects I’ve built and worked on.</p>
-        </div>
+        <u><b>SKILLS</b></u>
+        <ul>
+          <li>
+            <u>LANGUAGES</u>: working knowledge in Css, Java, Html, Python and
+            JavaScript
+          </li>
+          <li><u>TECHNOLODGIES</u>: ReactJS, NodeJS, SocketIO, Express</li>
+          <li><u>TOOLS</u>: Git, Bash</li>
+          <li><u>TECHNICAL:</u> Power point, MS Words, spreadsheets</li>
+          <li>
+            <u>MEDIA</u>: Video/Photo editing, creating marketing materials using
+            online softwares like Canva, adobe spark <br />
+          </li>
+        </ul>
 
-        <div class="col-md-4 text-center mb-4">
-          <i class="fas fa-comment-dots fa-3x"></i>
-          <h3><a class="nav-link" href="#footer">Contact</a></h3>
-          <p>My contact information.</p>
-        </div>
+        <u><b>EXPERIENCE</b></u>
+        <ul>
+          <li><u>WALAMRT:</u> Cashier from November 2020 - June 2023</li>
+          <li><u>BLUENOTES :</u> Assistant Manager from June 2023 - September 2024</li>
+          <li><u>SCOTIABANK:</u> BanK teller from september 2024 - Present</li>
+          <li>
+            <u>ROBOTICS PROGRAM:</u> Junior Facilitator, Aga Khan Education Board
+            - Ottawa, Ontario (Sep-Nov 2019)
+          </li>
+          <li>
+            <u>DISCOVERY CAMP:</u> Counselor, Aga Khan Youth and Sports Board -
+            Ottawa, Ontario (July 2018, July 2019, July 2023)
+          </li>
+          <li>
+            <u>MOSAIC CAMP:</u> Counselor, Aga Khan Youth and Sports Board -
+            Ottawa, Ontario - (July 2021)
+          </li>
+        </ul>
 
+        <br />
+        <br />
       </div>
-    </div>
-  </section>
+    </section>
+    <!-- About me -->
 
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2 class="mb-3"><br>ABOUT ME</h2>
-
-      <p>
-        Cognitive Science (Computation) and Video Game Design &amp; Animation student with experience in digital content creation and basic web development.
-        Skilled in structured writing, content organization, and quality review, with strong communication and collaboration abilities developed through academic and professional experience.
-      </p>
-
-      <hr>
-
-      <div class="row mt-4">
-        <div class="col-md-6 mb-4">
-          <h3 class="h5"><b>SKILLS</b></h3>
-          <p class="mb-2"><b>Web &amp; Programming:</b> HTML, CSS, JavaScript (learning), Python (learning), Java (learning)</p>
-          <p class="mb-2"><b>Tools &amp; Platforms:</b> Canva, Adobe Creative Suite (Photoshop, Adobe Illustrator), Microsoft Office (Word, Excel, PowerPoint, Outlook)</p>
-          <p class="mb-0"><b>Digital Media &amp; Content:</b> Content writing and editing, organizing digital files and media, reviewing content for clarity and formatting, photo and video editing</p>
-        </div>
-
-        <div class="col-md-6 mb-4">
-          <h3 class="h5"><b>EDUCATION</b></h3>
-          <ul class="mb-0">
-            <li><b>Carleton University (2023–2027):</b> Bachelor of Cognitive Science (Concentration in Computation)</li>
-            <li><b>Toronto Film School (2025–2027):</b> Diploma in Video Game Design &amp; Animation</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="work" class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h1><b>Computer Science Projects</b></h1>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="cs-projects" class="mt-5 pb-5">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-6 mb-4">
-          <div class="card text-center pt-3 h-100">
-            <div class="card-img">
-              <img src="images/chat.png" class="img-fluid my-3 project-img" alt="Live Chat App">
-            </div>
-            <div class="card-body">
-              <h3>Live Chat App</h3>
-              <p>
-                Developed a client and server based online chat app using JavaScript, CSS, ReactJS, Socket.IO and Express.
-                <br><a href="https://github.com/palwasham/chatApp.git" target="_blank" rel="noopener">Code Link!</a>
-              </p>
-            </div>
+    <!-- CODE Work -->
+    <section id="work" class="py-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1>
+              <b><u>Computer Science Projects</u></b>
+            </h1>
           </div>
         </div>
-
-        <div class="col-md-6 mb-4">
-          <div class="card text-center pt-3 h-100">
-            <div class="card-img">
-              <img src="images/Jeopardy.png" class="img-fluid my-3 project-img" alt="Jeopardy">
-            </div>
-            <div class="card-body">
-              <h3>Jeopardy</h3>
-              <p>
-                Created a jeopardy trivia game using Java.
-                <br><a href="https://github.com/palwasham/jeopardy.git" target="_blank" rel="noopener">Code Link!</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mb-4">
-          <div class="card text-center pt-3 h-100">
-            <div class="card-img">
-              <img src="images/Race.png" class="img-fluid my-3 project-img" alt="Horse Race">
-            </div>
-            <div class="card-body">
-              <h3>Horse Race</h3>
-              <p>
-                Developed a randomized horse race using Java.
-                <br><a href="https://github.com/palwasham/horseRace.git" target="_blank" rel="noopener">Code Link!</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mb-4">
-          <div class="card text-center pt-3 h-100">
-            <div class="card-img">
-              <img src="images/Portfolio.png" class="img-fluid my-3 project-img" alt="Personal Portfolio">
-            </div>
-            <div class="card-body">
-              <h3>Personal Portfolio</h3>
-              <p>
-                Developed a personal portfolio using HTML, CSS and Bootstrap.
-                <br><a href="https://github.com/palwasham/portfolio.git" target="_blank" rel="noopener">Code Link!</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
+    <!-- CODE Work -->
 
-  <section class="py-5 work-banner">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h1><b>Communication Technology Projects</b></h1>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- PROJECTS -->
+    <section id="product" class="mt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card text-center pt-3">
+              <div class="card-img">
+                <img
+                  src="images/chat.png"
+                  class="img-fluid my-3"
+                  style="width: 500px; height: 350px"
+                  alt=""
+                />
+              </div>
 
-  <section id="media-projects" class="mt-5 pb-5">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-6 mb-4">
-          <div class="card text-center pt-3 h-100">
-            <div class="card-img">
-              <img src="images/poster.jpg" class="img-fluid my-3 poster-img" alt="Cafe Poster">
-            </div>
-            <div class="card-body">
-              <h3>Cafe Poster</h3>
-              <p>A poster made for a cafe's grand opening in media and technology class using online tools.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mb-4">
-          <div class="card text-center pt-3 h-100">
-            <div class="card-img">
-              <img src="images/Poster2.png" class="img-fluid my-3 poster-img" alt="Class Poster">
-            </div>
-            <div class="card-body">
-              <h3>Class Poster</h3>
-              <p>A poster made to promote communication technology class at school, made using online tools.</p>
+              <div class="card-body">
+                <h3>Live Chat App</h3>
+                <p>
+                  Developed a client and server based Online chat app using
+                  JavaScript, Css, ReactJS, socketIO and express. This app allows
+                  two individuals to join the same chat room and communicate
+                  with each other.
+                  <br />
+                  <a href="https://github.com/palwasham/chatApp.git">Code Link!</a>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-      </div>
-    </div>
-  </section>
+          <div class="col-md-6">
+            <div class="card text-center pt-3">
+              <div class="card-img">
+                <img
+                  src="images/Jeopardy.png"
+                  class="img-fluid my-3"
+                  style="width: 500px; height: 350px"
+                  alt=""
+                />
+              </div>
 
-  <section id="gallery" class="py-5">
-    <div class="container-fluid">
-      <div class="row">
+              <div class="card-body">
+                <h3>Jeopardy</h3>
+                <p>
+                  Created a jeopardy trivia game using Java. This game allows
+                  players to pick random questions and answer them to gain
+                  points
+                  <br />
+                  <a href="https://github.com/palwasham/jeopardy.git">Code Link!</a>
+                </p>
+              </div>
+            </div>
+          </div>
 
-        <div class="col-md-4 col-sm-6 mb-3">
-          <div class="imageContainer">
-            <img src="images/logo.png" class="img-fluid" alt="Cooking Class Logo">
-            <div class="imgOverlay">
-              <div class="imgText">
-                <h4>Cooking Class Logo</h4>
+          <div class="col-md-6">
+            <div class="card text-center pt-3">
+              <div class="card-img">
+                <img
+                  src="images/Race.png"
+                  class="img-fluid my-3"
+                  style="width: 500px; height: 350px"
+                  alt=""
+                />
+              </div>
+
+              <div class="card-body">
+                <h3>Horse Race</h3>
+                <p>
+                  Developed a randomized horse race using Java. This program
+                  lets users choose a horse and once the program is played the
+                  horses run at random speeds until the winner is declared
+                  <br />
+                  <a href="https://github.com/palwasham/horseRace.git">Code Link!</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card text-center pt-3">
+              <div class="card-img">
+                <img
+                  src="images/Portfolio.png"
+                  class="img-fluid my-3"
+                  style="width: 500px; height: 350px"
+                  alt=""
+                />
+              </div>
+
+              <div class="card-body">
+                <h3>Personal Portfolio</h3>
+                <p>
+                  Developed a personal portfolio using Html, Css and bootstrap.
+                  This portfolio contains information about me, my Projects and
+                  my experiences.
+                  <br />
+                  <a href="https://github.com/palwasham/portfolio.git">Code Link!</a>
+                </p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- PROJECTS -->
 
-        <div class="col-md-4 col-sm-6 mb-3">
-          <div class="imageContainer">
-            <img src="images/logo2.png" class="img-fluid" alt="Tech Class Logo">
-            <div class="imgOverlay">
-              <div class="imgText">
-                <h4>Tech Class Logo</h4>
+    <!-- Media Work -->
+    <section id="work" class="py-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1>
+              <b><u>Communication Technolodgy Projects</u></b>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Media Work -->
+
+    <!-- Poster Section -->
+    <section id="product" class="mt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card text-center pt-3">
+              <div class="card-img">
+                <img
+                  src="images/poster.jpg"
+                  class="img-fluid my-3"
+                  style="width: 300px; height: 400px"
+                  alt=""
+                />
+              </div>
+
+              <div class="card-body">
+                <h3>Cafe poster</h3>
+                <p>
+                  A poster made for a cafe's grand opening in media and
+                  technolodgy class using online tools
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card text-center pt-3">
+              <div class="card-img">
+                <img
+                  src="images/Poster2.png"
+                  class="img-fluid my-3"
+                  style="width: 300px; height: 400px"
+                  alt=""
+                />
+              </div>
+
+              <div class="card-body">
+                <h3>Class poster</h3>
+                <p>
+                  A poster made to promote communication technolodgy class at
+                  school, made using online tools
+                </p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- poster Section -->
 
-        <div class="col-md-4 col-sm-6 mb-3">
-          <div class="imageContainer">
-            <img src="images/logo3.png" class="img-fluid" alt="Cafe Logo">
-            <div class="imgOverlay">
-              <div class="imgText">
-                <h4>Cafe Logo</h4>
+    <!-- IMAGE GALLERY -->
+    <section id="gallery" class="py-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="imageContainer">
+              <img src="images/logo.png" class="img-fluid" alt="" />
+              <div class="imgOverlay">
+                <div class="imgText">
+                  <h4>Cooking Class Logo</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="imageContainer">
+              <img src="images/logo2.png" class="img-fluid" alt="" />
+              <div class="imgOverlay">
+                <div class="imgText">
+                  <h4>Tech Class Logo</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="imageContainer">
+              <img src="images/logo3.png" class="img-fluid" alt="" />
+              <div class="imgOverlay">
+                <div class="imgText">
+                  <h4>Cafe Logo</h4>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
+    <!-- IMAGE GALLERY -->
 
-  <section id="logo-designs" class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center mb-4">
-          <h1><b>Logo Designs</b></h1>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <div class="card text-center pt-3 h-100">
-            <div class="card-img">
-              <img src="images/IMG_0267.png" class="img-fluid my-3 logo-img" alt="Nova Chic Logo">
-            </div>
-            <div class="card-body">
-              <h3>Nova Chic</h3>
-              <p>Luxury fashion brand concept logo.</p>
+    <!-- Footer Section -->
+    <footer id="footer" class="py-5 mt-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 text-muted">
+            <div class="first content">
+              <h2>Contact</h2>
+              <br />
+              <p>For more information feel free to reach me out <br /></p>
+              <p>Email: palwashamoez@gmail.com</p>
+              <p>Phone: 613-286-0347</p>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-6 mb-4">
-          <div class="card text-center pt-3 h-100">
-            <div class="card-img">
-              <img src="images/IMG_0236.png" class="img-fluid my-3 logo-img" alt="Navale Logo">
-            </div>
-            <div class="card-body">
-              <h3>Navale</h3>
-              <p>Nautical adventure game logo concept.</p>
+          <div class="col-md-6 text-muted">
+            <div class="contactImage">
+              <img src="images/Contact-Me.png" class="img-fluid" alt="" />
             </div>
           </div>
         </div>
       </div>
+    </footer>
+    <!-- Footer Section -->
 
-    </div>
-  </section>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
 
-  <footer id="footer" class="py-5 mt-2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5 text-muted">
-          <div class="first content">
-            <h2>Contact</h2><br>
-            <p>For more information feel free to reach me out</p>
-            <p>Email: palwashamoez@gmail.com</p>
-            <p>Phone: 613-286-0347</p>
-          </div>
-        </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
 
-        <div class="col-md-6 text-muted">
-          <div class="contactImage">
-            <img src="images/Contact-Me.png" class="img-fluid" alt="Contact">
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
