@@ -61,7 +61,7 @@ p {
 }
 
 #features {
-  background-color: #298e8e;
+  background-color: #e3f1f1;
 }
 
 #features i {
@@ -118,7 +118,7 @@ p {
 }
 
 #work h1 {
-  color:  #298e8e;
+  color: white;
   margin-top: 40px;
 }
 
@@ -200,11 +200,11 @@ p {
 #footer .container .content {
   flex-basis: 50%;
   padding: 10px 20px;
-  color: #298e8e;
+  color: white;
 }
 
 #footer p {
-  color:  #298e8e;
+  color: white;
 }
 
 .content h2 {
