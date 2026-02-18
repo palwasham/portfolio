@@ -1,143 +1,171 @@
-/* General Changes */
-h3{
-  font-size:30px;
-  font-weight: bold;
-}
+/* ===== Fixed + Cleaned CSS (drop-in replacement) ===== */
+
+/* General */
+html { scroll-behavior: smooth; }
 
 body{
   font-family: 'Georgia', serif;
+  line-height: 1.6;
 }
 
- html {
-  scroll-behavior: smooth;
+p{ color: #111; }
+
+/* Avoid conflicting h3 rules:
+   - Keep global sizing here
+   - Handle header h3 separately */
+h3{
+  font-size: 30px;
+  font-weight: 700;
 }
-/* General Changes */
 
-
-/* Navbar Section */
+/* Navbar */
 .navbar{
   border-bottom: #003333 solid 4px;
+  background-color: #008B8B; /* moved from inline HTML */
 }
 
 .navbar-brand{
   color:#003333 !important;
   font-size:27px;
+  font-weight: 700;
 }
 
 .nav-link{
   text-transform: uppercase;
+  color: #ffffff !important; /* readable on teal */
+  letter-spacing: 0.5px;
 }
 
 .nav-link:hover{
-  color: #1e2d2d !important;
+  color: #d9ffff !important;
 }
-/* Navbar Section */
 
-
-
-/* Header Section */
+/* Header */
 #header{
-  background: url('../images/backg2.jpeg') no-repeat;
-  background-size: cover;
+  background: url('../images/backg2.jpeg') center/cover no-repeat;
   height: 70vh;
-
+  position: relative;
 }
 
-h1{
-  margin-top: 190px;
+/* If you have an overlay div in HTML, this makes text readable */
+#header .overlay{
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+}
+
+/* Remove hard-coded margin-top that breaks on mobile */
+#header h1{
+  margin-top: 0;
   color: #ffffff;
 }
 
-h3{
-color: #e6ffff;
-margin-top: 20px;
+#header h3{
+  color: #e6ffff;
+  margin-top: 12px;
+  font-weight: 600;
 }
 
-/* Header Section */
-
-
-
-/* Features Section */
-p{
-  color: black;
-}
+/* Features */
 #features {
   background-color:#e3f1f1;
 }
+
 #features i{
   color:#003333;
 }
 
+/* Don’t push every .container down site-wide */
 #features .container{
-  margin-bottom: 1px;
+  margin-bottom: 0;
 }
 
-#features .nav-link{
-  color:black;
+/* In features section, links should be dark */
+#features .nav-link,
+#features .section-link{
+  color:#111 !important;
+  text-decoration: none;
 }
 
 #features h3:hover{
   color:#00cccc;
   cursor:pointer;
 }
-/* Features Section */
 
-
-
-/* About me Section */
-#about .container{
-  margin-bottom: 10px;
-  background-color: rgb(219, 232, 233);
-  size: 100px;
-
-}
+/* About */
 #about {
   background-color: #0c3e3e;
 }
-.about p{
-  font-family: Arial;
-  font-size: 1.2em;
-  color: black;
-  padding: 20px;
+
+#about .container{
+  margin-bottom: 10px;
+  background-color: rgb(219, 232, 233);
+  padding: 24px;
+  border-radius: 12px;
+  /* removed invalid: size: 100px; */
 }
-.about{
-  display: flex;
+
+#about p{
+  font-family: Arial, sans-serif;
+  font-size: 1.05rem;
+  color: #111;
 }
 
-/* About me Section */
+/* Removed .about flex (it didn’t match your HTML and can break layout)
+.about{ display:flex; }
+*/
 
-
-
- /* Project heads Section */
+/* Project heads / banners
+   NOTE: Your updated HTML should use .section-banner instead of duplicated #work
+   but we keep #work here to not break older pages. */
 #work{
-  background: url(../images/back1.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size:cover;
+  background: url(../images/back1.jpeg) center/cover no-repeat fixed;
 }
 
+/* Your original had margin-top pushing text down — keep it reasonable */
 #work h1{
-  color: white;
+  color: #ffffff;
   margin-top: 40px;
 }
-/* Project heads Section  */
 
-
-
-/* Posts Section */
-.container{
-  margin-bottom: 30px;
-}
+/* Posts / Cards
+   Removed: .container{ margin-bottom: 30px; } because it affects EVERYTHING */
 #product h3{
-  color: black;
+  color: #111;
 }
-/* Posts Section */
 
+/* Add project/poster sizing WITHOUT inline styles */
+.project-img{
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
 
+.poster-img{
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
 
-/* GALLERY Section */
+/* New Logo sizing */
+.logo-img{
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+/* Gallery */
 #gallery .col-md-3{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* If your HTML uses col-md-4, this helps too */
+#gallery .col-md-4{
   padding-left: 0;
   padding-right: 0;
 }
@@ -145,26 +173,23 @@ p{
 .imageContainer{
   position: relative;
   cursor: pointer;
-  width: 100;
-
+  width: 100%; /* fixed: was 100 (invalid) */
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .imgOverlay{
   position:absolute;
-  top:0;
-  bottom:0;
-  right: 0;
-  left: 0;
+  inset: 0;              /* cleaner than top/bottom/left/right */
   width: 100%;
   height:100%;
   background-color:rgb(26, 0, 26);
   opacity:0;
-
+  transition: opacity 0.2s ease;
 }
 
 .imageContainer:hover .imgOverlay{
   opacity:.5;
-
 }
 
 .imgText{
@@ -173,96 +198,51 @@ p{
   transform: translate(-50%, -50%);
   top:50%;
   left:50%;
+  text-align: center;
 }
-/* GALLERY Section */
 
-
-
-/* Footer Section */
+/* Footer */
 #footer{
-  bottom:0px;
   width: 100%;
   background: #003333;
-
 }
+
+#footer p,
+#footer h2{
+  color: #ffffff;
+}
+
 .contactImage{
   margin-top: 6px;
-  margin-left: 80px;
-  z-index:10;
-  size-adjust: 10;
+  margin-left: 0; /* safer on different screens */
+  /* removed invalid: size-adjust */
 }
+
+/* Don’t force footer .container into flex (Bootstrap uses grid).
+   If you want flex, wrap your own div inside footer instead. */
 #footer .container{
-  margin:auto;
-  padding:0 20px;
-  display:flex;
-  justify-content:space-between;
-  align-items: center;
+  padding: 0 20px;
 }
 
-#footer .container .content{
-  flex-basis: 50%;
-  padding:10px 20px;
-  color:white;
-}
-
-#footer p{
+/* If you use .content, keep it readable */
+#footer .content{
   color: white;
 }
 
 .content h2{
   font-size: 1.2rem;
-  font-size: 600;
+  font-weight: 600; /* fixed: you had font-size:600; */
   text-transform:uppercase;
 }
 
-
-/* media quiry */
-@media screen and (max-width: 1200px)
-{
-#header{
-  background-size: 1200px 100vh;
-
-}
+/* Responsive */
+@media screen and (max-width: 992px){
+  #header{ height: 60vh; }
+  .project-img{ height: 260px; }
+  .poster-img{ height: 360px; }
+  .logo-img{ max-height: 320px; }
 }
 
-@media screen and (max-width: 992px)
-{
-  #header{
-    background-size: 990px 100vh;
-  }
-
-}
-
-@media screen and (max-width: 768px)
-{
-  #header{
-    background-size: 760px 100vh;
-  }
-  .row p{
-    color:black;
-  }
-  .aboutMeImage{
-    margin-left:0;
-    text-align: center;
-    margin-top: 0;
-  }
-  .aboutMeArea{
-    margin-right: 0;
-  }
-}
-
-@media screen and (max-width: 576px)
-{
-  #header{
-    background-size: 570px 100vh;
-
-  }
-  .aboutMeImage{
-    margin-left:0;
-    text-align: center;
-    margin-top: 0;
-  }
-  .aboutMeArea{
-    margin-right: 0;
-  }
+@media screen and (max-width: 576px){
+  #header{ height: 55vh; }
 }
