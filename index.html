@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Palwasha Moez | Portfolio</title>
+  <title>Personal Portfolio</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-        crossorigin="anonymous">
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous">
 
   <!-- Style CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -24,18 +25,18 @@
 <body>
 
   <!-- Navigation Section -->
-  <nav class="navbar navbar-expand-lg navbar-dark main-nav">
-    <a class="navbar-brand font-weight-bold" href="#header">Palwasha Moez</a>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#header">Palwasha Moez</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link" href="#header">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About me</a></li>
         <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
         <li class="nav-item"><a class="nav-link" href="#cs-projects">Projects</a></li>
         <li class="nav-item"><a class="nav-link" href="#media-projects">Media</a></li>
@@ -53,7 +54,7 @@
         <div class="row text-center">
           <div class="col">
             <h1 class="display-4"><u>Personal Portfolio</u></h1>
-            <h3 class="display-5">Palwasha Moez</h3>
+            <h3 class="display-5">Palwasha Moez.</h3>
           </div>
         </div>
       </div>
@@ -68,19 +69,19 @@
 
         <div class="col-md-4 text-center mb-4">
           <i class="fab fa-odnoklassniki fa-3x"></i>
-          <h3><a class="section-link" href="#about">About</a></h3>
+          <h3><a class="nav-link" href="#about">About</a></h3>
           <p>About me, my skills, and background.</p>
         </div>
 
         <div class="col-md-4 text-center mb-4">
           <i class="fas fa-rocket fa-3x"></i>
-          <h3><a class="section-link" href="#cs-projects">Projects</a></h3>
+          <h3><a class="nav-link" href="#cs-projects">Projects</a></h3>
           <p>Projects I’ve built and worked on.</p>
         </div>
 
         <div class="col-md-4 text-center mb-4">
           <i class="fas fa-comment-dots fa-3x"></i>
-          <h3><a class="section-link" href="#footer">Contact</a></h3>
+          <h3><a class="nav-link" href="#footer">Contact</a></h3>
           <p>My contact information.</p>
         </div>
 
@@ -230,12 +231,13 @@
   </section>
   <!-- Resume Section -->
 
-  <!-- Computer Science Projects Banner -->
-  <section class="section-banner py-4">
+  <!-- Computer Science Projects Banner (ONLY ONE #work id used) -->
+  <section id="work" class="py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h1><b><u>Computer Science Projects</u></b></h1>
+          <!-- Removed <u> to avoid “blue link-looking” underline -->
+          <h1><b>Computer Science Projects</b></h1>
         </div>
       </div>
     </div>
@@ -255,7 +257,7 @@
               <h3>Live Chat App</h3>
               <p>
                 Developed a client-server chat app using JavaScript, CSS, ReactJS, Socket.IO, and Express.
-                <br> <a href="https://github.com/palwasham/chatApp.git" target="_blank" rel="noopener">Code Link</a>
+                <br> <a href="https://github.com/palwasham/chatApp.git" target="_blank" rel="noopener">Code Link!</a>
               </p>
             </div>
           </div>
@@ -269,8 +271,8 @@
             <div class="card-body">
               <h3>Jeopardy</h3>
               <p>
-                Created a Jeopardy trivia game using Java. Players answer questions to gain points.
-                <br> <a href="https://github.com/palwasham/jeopardy.git" target="_blank" rel="noopener">Code Link</a>
+                Created a jeopardy trivia game using Java.
+                <br> <a href="https://github.com/palwasham/jeopardy.git" target="_blank" rel="noopener">Code Link!</a>
               </p>
             </div>
           </div>
@@ -284,8 +286,8 @@
             <div class="card-body">
               <h3>Horse Race</h3>
               <p>
-                Developed a randomized horse race using Java where users pick a horse and a winner is declared.
-                <br> <a href="https://github.com/palwasham/horseRace.git" target="_blank" rel="noopener">Code Link</a>
+                Developed a randomized horse race using Java.
+                <br> <a href="https://github.com/palwasham/horseRace.git" target="_blank" rel="noopener">Code Link!</a>
               </p>
             </div>
           </div>
@@ -299,8 +301,8 @@
             <div class="card-body">
               <h3>Personal Portfolio</h3>
               <p>
-                Developed a personal portfolio using HTML, CSS, and Bootstrap.
-                <br> <a href="https://github.com/palwasham/portfolio.git" target="_blank" rel="noopener">Code Link</a>
+                Developed a personal portfolio using HTML, CSS and Bootstrap.
+                <br> <a href="https://github.com/palwasham/portfolio.git" target="_blank" rel="noopener">Code Link!</a>
               </p>
             </div>
           </div>
@@ -311,12 +313,12 @@
   </section>
   <!-- CS PROJECTS -->
 
-  <!-- Media Projects Banner -->
-  <section class="section-banner py-4">
+  <!-- Communication Tech Banner (uses class, NOT duplicate id) -->
+  <section class="py-5 work-banner">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h1><b><u>Communication Technology Projects</u></b></h1>
+          <h1><b>Communication Technology Projects</b></h1>
         </div>
       </div>
     </div>
@@ -334,7 +336,7 @@
             </div>
             <div class="card-body">
               <h3>Cafe Poster</h3>
-              <p>A poster made for a cafe’s grand opening using online design tools.</p>
+              <p>A poster made for a cafe’s grand opening in media and technology class using online tools.</p>
             </div>
           </div>
         </div>
@@ -346,7 +348,7 @@
             </div>
             <div class="card-body">
               <h3>Class Poster</h3>
-              <p>A poster made to promote a communication technology class using online tools.</p>
+              <p>A poster made to promote communication technology class at school, made using online tools.</p>
             </div>
           </div>
         </div>
@@ -356,7 +358,7 @@
   </section>
   <!-- MEDIA PROJECTS -->
 
-  <!-- IMAGE GALLERY -->
+  <!-- IMAGE GALLERY (fixed id: no trailing space) -->
   <section id="gallery" class="py-5">
     <div class="container-fluid">
       <div class="row">
@@ -397,7 +399,6 @@
       </div>
     </div>
   </section>
-  <!-- IMAGE GALLERY -->
 
   <!-- NEW LOGO DESIGNS -->
   <section id="logo-designs" class="py-5 bg-light">
@@ -436,13 +437,13 @@
   <!-- Footer Section -->
   <footer id="footer" class="py-5 mt-2">
     <div class="container">
-      <div class="row align-items-center">
+      <div class="row">
 
         <div class="col-md-5 text-muted">
           <div class="first content">
             <h2>Contact</h2>
             <br>
-            <p>For more information feel free to reach out.</p>
+            <p>For more information feel free to reach me out</p>
             <p>Email: palwashamoez@gmail.com</p>
             <p>Phone: 613-286-0347</p>
           </div>
@@ -450,7 +451,7 @@
 
         <div class="col-md-6 text-muted">
           <div class="contactImage">
-            <img src="images/Contact-Me.png" class="img-fluid" alt="Contact image">
+            <img src="images/Contact-Me.png" class="img-fluid" alt="Contact">
           </div>
         </div>
 
@@ -461,14 +462,14 @@
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-          crossorigin="anonymous"></script>
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-          crossorigin="anonymous"></script>
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-          integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-          crossorigin="anonymous"></script>
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 
 </body>
 </html>
